@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <style>
+
+    body {
+
+      min-height: 100vh;
+      display: grid;
+      place-content: center;
+  
+      background-color: hsl(185, 75%, 39%);
+      background-image: 
+      url(images/bg-pattern-top.svg), 
+      url(images/bg-pattern-bottom.svg);
+      background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+      background-repeat: no-repeat, no-repeat;       
+      font-family: 'Kumbh Sans', sans-serif;
+    }
+
+    main {
+      background-color: white;
+      width: 22rem;
+      height: 24rem;
+      margin: 11rem auto;
+      border-radius: 1rem;
+    }
+
+    .texture {
+      width: 100%;
+      height: 9em;
+      border-radius: 1rem 1rem 0 0;
+    }
+
+    .photo {
+      display: flex;
+      position: relative;
+      border: 5px solid white;
+      border-radius: 100%;
+      margin: -3.5rem auto ;
+    }
+
+    .text-container1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 4rem;
+    }
+
+    /* Name */
+    h1 {
+      margin-bottom: 12px;
+      margin-right: 10px;
+    }
+
+    /* London */
+    h2 {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 400;
+      margin-top: -2px;
+    }
+
+    /* 26 */
+    .text-container1 span, h2, h1 {
+      font-size: 18px;
+      color: hsl(227, 10%, 46%);
+      font-weight: 500;    
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .line {
+      background-color: hsl(0, 0%, 87%);;
+      height: 1px;
+      width: 100%;
+      margin-top: 3vh;
+      margin-bottom: 12px;
+    }
+
+    .text-container2 {
+      display: flex;
+      justify-content: space-evenly;
+      text-align: center;
+    }
+
+    ul {
+      margin-left: -3rem;
+    }
+
+    li {
+      list-style: none;
+      margin-bottom: -2px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 10px;
+      letter-spacing: 0.1em;
+    }
+
+    li, h1 {
+      color: hsl(229, 23%, 23%);
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    p, h2 {
+      color: hsl(227, 10%, 46%);
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+    <div>
+      <img class="texture" src="images/bg-pattern-card.svg" alt="">
+      <img class="photo" src="images/image-victor.jpg" alt="">
+      
+    </div>  
+
+    <div class="text-container1">
+      <h1>Victor Crest</h1>
+      <span>26</span>
+    </div>
+
+    <h2>London</h2>
+
+    <div class="line"></div>
+  
+    <div class="text-container2">
+
+      <ul>
+        <li>80K</li> 
+        <p>Followers</p>
+      </ul>
+
+      <ul>
+        <li>803K</li>
+        <p>Likes</p>
+      </ul>
+
+      <ul>
+        <li>1.4K</li>
+        <p>Photos</p>
+      </ul>
+
+    </div>
+  
+  </main>
+</body>
+</html>
